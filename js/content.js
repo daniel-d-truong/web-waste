@@ -1,0 +1,1 @@
+alert("stop killing the world");
