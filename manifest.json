@@ -3,9 +3,14 @@
     "name": "web-waste",
     "version": "1.0",
     "manifest_version": 2,
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage"
+    ],
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
+            "matches": ["http://youtube.com/*"],
             "js":  ["js/content.js"]
         }
     ],
@@ -13,7 +18,7 @@
         "default_icon": {
             "16": "img/logo16.png"
         },
-        "default_popup": "popup.html", 
+        "default_popup": "popup.html",
         "default_title": "Carbon Centric Browsing"
     }
 }
