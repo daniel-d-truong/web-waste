@@ -1,10 +1,9 @@
 const co2PerGoogleSearch = 6.0;
 const histCO2GoogleSearch = 4.0;
-const key = "co2Used";
+const key = "carbon";
 
 chrome.storage.sync.get([key], (result) => {
-    alert(result[key]);
-    let val = result[key] += co2PerGoogleSearch;
+    let val = (result[key] ? result[key] : 0) + co2PerGoogleSearch;
     let obj = {};
     obj[key] = val;
     console.log(obj);
