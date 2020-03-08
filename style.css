@@ -5,6 +5,10 @@ body{
     line-height: 0.9;
 }
 
+#header{
+    z-index: 1;
+}
+
 h3{
    text-align: center;
 }
@@ -47,10 +51,11 @@ h3{
     height: 50px;
     top: 70px;
     left: 150px;
-    
+    transition: height 1s linear;
 }
 
 #emission-span{
+    z-index: 0;
     padding: 25px 0;
 }
 
