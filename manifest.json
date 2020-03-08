@@ -6,7 +6,8 @@
     "permissions": [
       "tabs",
       "activeTab",
-      "storage"
+      "storage",
+      "history"
     ],
     "content_scripts": [
         {
