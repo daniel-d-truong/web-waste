@@ -42,6 +42,9 @@ h3{
     z-index: 10;
     text-align: center;
 }
+.Left-header{
+    float: left;
+}
 
 .Right{
     text-align: right;
