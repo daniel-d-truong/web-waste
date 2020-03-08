@@ -12,6 +12,10 @@
         {
             "matches": ["http://youtube.com/*"],
             "js":  ["js/youtube.js"]
+        }, 
+        {
+            "matches": ["https://www.google.com/search?*"],
+            "js": ["js/googleSearch.js"]
         }
     ],
     "browser_action": {
