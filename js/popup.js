@@ -20,7 +20,7 @@ chrome.storage.sync.get(['carbon'], (result) => {
 
   // Update the count of the tree
   var treeCount = document.getElementById("treeCount");
-  treeCount.textContent = (result.carbon) / 250;
+  treeCount.textContent = (result.carbon.toFixed(2)) / 250;
 
   // Update the visibility of the donate message
   if( result.carbon >= 250 ){
