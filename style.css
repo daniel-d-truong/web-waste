@@ -46,6 +46,3 @@ h3{
 a:hover{
     color: #00cc00;
 }
-#tree {
-    filter: grayscale(100%);
-}
