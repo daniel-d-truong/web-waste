@@ -7,18 +7,23 @@
       "tabs",
       "activeTab",
       "storage",
+      "downloads",
       "history"
     ],
     "content_scripts": [
         {
-            "matches": ["http://youtube.com/*"],
+            "matches": ["https://www.youtube.com/*"],
             "js":  ["js/youtube.js"]
-        }, 
+        },
         {
             "matches": ["https://www.google.com/search?*"],
             "js": ["js/googleSearch.js"]
         }
     ],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
     "browser_action": {
         "default_icon": {
             "16": "img/logo16.png"
