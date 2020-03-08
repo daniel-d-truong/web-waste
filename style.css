@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
 body{
-    min-width: 400px;
-    font-family: 'Walter Turncoat', cursive;
+    min-width: 450px;
+    font-family: 'Century Gothic', 'Futura', cursive;
     font-size: 12px;
     line-height: 0.9;
 }
@@ -27,7 +29,20 @@ h3{
     color:#8c8c8c;
 }
 
+.Footnote-smaller{
+    color:#8c8c8c;
+    font-size: 10px;
+    text-align: center;
+}
+
 .Left-span{
+    min-width: 180px;
+    max-width: 180px;
+    float: left;
+    z-index: 10;
+    text-align: center;
+}
+.Left-header{
     float: left;
 }
 
@@ -39,14 +54,27 @@ h3{
     text-align: center;
 }
 
+#treeCount{
+    color: #009900;
+    font-size: 16px;
+}
+
 .Links{
     font-size: 10px;
+}
+
+a{
+    color: #006600;
 }
 
 .icon {
     width: auto;
     height: 30px;
     background-color: white;
+}
+
+.icon:hover {
+    cursor: pointer;
     border: 1px solid #000000;
 }
 
@@ -54,16 +82,16 @@ h3{
     position: absolute;
     background-color: white;
     opacity: 0.7;
-    width: 250px;
+    width: 450px;
     height: 0px;
     top: 70px;
-    left: 150px;
+    left: 180px;
     transition: height 1s linear;
 }
 
 #emission-span{
-    z-index: 0;
-    padding: 25px 0;
+    z-index: 100;
+    padding: 5px 0;
 }
 
 a:hover{
@@ -73,4 +101,15 @@ a:hover{
 #iconsArea {
     display: flex;
     justify-content: space-around;
+}
+
+#donate{
+    visibility: hidden;
+    font-size: 10px;
+    color: #ff6699;
+    line-height: 1.5;
+}
+
+.selected {
+    background-color: #DDDDDD;
 }

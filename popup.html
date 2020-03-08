@@ -9,7 +9,7 @@
 <body vlink=#006600>
     <!-- Header with welcome message and logo -->
     <div id="header">
-        <span class="Left-span">
+        <span class="Left-header">
             <p> Good morning, raccoon_in_a_dungeon </p>
         </span>
         <span>
@@ -26,8 +26,24 @@
             <h3>You have used:</h3>
             <h3 class="Count">92457638</h3>
             <p class="Footnote">grams of carbon today</p>
+            
+            <!-- Tree equivalency :0 -->
+            <div class="Footnote-smaller"> 
+                (Equivalent to
+                <span id="treeCount">0</span> tree's
+            <p> daily carbon absorption)</p>
+            </div>
 
-
+            <!-- This will show up if we used up more than 1 tree -->
+            <div id="donate" vlink=#ff6699>
+                <p> *** That's more than one tree!
+                    <br> 
+                    <span class="Links">
+                        <a href="https://onetreeplanted.org/"> Donate to a tree charity </a>
+                    </span>
+                </p>
+            </div>
+            <!-- All the icons... -->
             <div id="iconsArea">
                 <div class="button">
                     <img class="icon" src="img/youtubeIcon.png"/>
@@ -42,7 +58,7 @@
 
         <!-- Literally an image of a tree... for now -->
         <div class="Center">
-            <img id="tree" src="img/tree.png" width="220px" height="180px">
+            <img id="tree" src="img/tree.png" width="260px" height="215px">
             <div id="cameo"></div>
         </div>
     </div>
@@ -67,6 +83,8 @@
             </a>
         </div>
     </div>
+
+    <!-- Javascript handling variable changes -->
     <script src="./js/popup.js"></script>
 </body>
 
