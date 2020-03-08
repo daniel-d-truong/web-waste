@@ -8,15 +8,21 @@
       "activeTab",
       "storage",
       "downloads"
+      "history"
     ],
     "content_scripts": [
         {
             "matches": ["https://www.youtube.com/*"],
             "js":  ["js/youtube.js"]
+
         },
         {
             "matches": ["<all_urls>"],
-            "js": ["js/download.js"]
+
+        }, 
+        {
+            "matches": ["https://www.google.com/search?*"],
+            "js": ["js/googleSearch.js"]
         }
     ],
     "background": {
