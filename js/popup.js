@@ -12,4 +12,8 @@ chrome.storage.sync.get(['carbon'], (result) => {
       $('.Count').text(Math.ceil(this.Counter));
     }
   });
+
+  var canvas = document.getElementById("cameo");
+  var updatedHeight = result.carbon / 250 * 180;
+  canvas.style.height = updatedHeight + 'px';
 });
