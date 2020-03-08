@@ -13,7 +13,12 @@ chrome.storage.sync.get(['carbon'], (result) => {
     }
   });
 
+  // Update the height of the cameo
   var canvas = document.getElementById("cameo");
   var updatedHeight = (result.carbon % 250) / 250 * 180;
   canvas.style.height = updatedHeight + 'px';
+
+  // Update the count of the tree
+  var treeCount = document.getElementById("treeCount");
+  treeCount.textContent = (result.carbon) / 250;
 });

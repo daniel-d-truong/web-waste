@@ -27,6 +27,12 @@ h3{
     color:#8c8c8c;
 }
 
+.Footnote-smaller{
+    color:#8c8c8c;
+    font-size: 10px;
+    text-align: center;
+}
+
 .Left-span{
     float: left;
 }
@@ -37,6 +43,11 @@ h3{
 
 .Center{
     text-align: center;
+}
+
+#treeCount{
+    color: #009900;
+    font-size: 16px;
 }
 
 .Links{
@@ -56,7 +67,7 @@ h3{
 
 #emission-span{
     z-index: 0;
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 a:hover{
