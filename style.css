@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
 body{
     min-width: 400px;
-    font-family: 'Walter Turncoat', cursive;
+    font-family: 'Century Gothic', 'Futura', cursive;
     font-size: 12px;
     line-height: 0.9;
 }
@@ -58,6 +60,10 @@ h3{
     width: auto;
     height: 30px;
     background-color: white;
+}
+
+.icon:hover {
+    cursor: pointer;
     border: 1px solid #000000;
 }
 
@@ -84,4 +90,8 @@ a:hover{
 #iconsArea {
     display: flex;
     justify-content: space-around;
+}
+
+.selected {
+    background-color: #DDDDDD;
 }
