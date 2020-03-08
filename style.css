@@ -43,3 +43,7 @@ h3{
 #emission-span{
     padding: 25px 0;
 }
+
+#tree {
+    filter: grayscale(100%);
+}
