@@ -14,12 +14,7 @@
         {
             "matches": ["https://www.youtube.com/*"],
             "js":  ["js/youtube.js"]
-
         },
-        {
-            "matches": ["<all_urls>"],
-
-        }, 
         {
             "matches": ["https://www.google.com/search?*"],
             "js": ["js/googleSearch.js"]
